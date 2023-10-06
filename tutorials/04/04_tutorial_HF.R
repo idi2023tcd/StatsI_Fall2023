@@ -5,9 +5,9 @@
 getwd()
 
 # Set working directory 
-setwd("/Users/hannahfrank/StatsI_Fall2023_prep")
-getwd()
 
+getwd()
+setwd("C:/Users/idiam/OneDrive/Documents/GitHub/StatsI_Fall2023")
 #############################
 ### RECAP Chi-square test ###
 #############################
@@ -37,7 +37,7 @@ sprintf("%.20f",1.097e-12)
 # Step 2: Hypotheses
 # Step 3: Test statistic
 # Step 4: P-value
-# Step 5: Conclusion
+# Step 5: Conclusion- We can reject the null hypothesis, these two variable are not independent
 
 ### Look at standardized residuals ###
 
@@ -75,6 +75,9 @@ View(df)
 
 # Scatter plot 
 plot(df$income,df$edu)
+##
+#or 
+ggpairs(df[c("income", "edu")])
 
 # Calculate correlation
 cor(df$income,df$edu)
